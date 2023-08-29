@@ -21,5 +21,5 @@ def show(limit = 20, offset = 0):
 
 if __name__ == '__main__':
     limit = input("How many pokemons do you want in each list?: ")
-    show(limit)
+
     

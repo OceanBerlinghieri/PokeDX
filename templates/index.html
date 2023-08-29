@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>PokeDX</title>
+</head>
+<body>
+    <!--Header-->
+    <nav class = navbar>
+        <div class = header>
+            <h2>PokeDX</h2>
+            <form action="/" method="POST">
+                <div>
+                    <input type="search" name="search">
+                    <button type="submit">BUSCAR</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!--Content-->
+    <div>
+        <div>
+            <!--Accessing json data-->
+            <p>{{data['species']['name']}}</p>
+            <p>{{data['id']}}</p>
+        </div>
+    </div>
+</body>
+</html>
