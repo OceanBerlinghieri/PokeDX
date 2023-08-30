@@ -1,9 +1,8 @@
-# POKEAPI CONSUMTION
-## What to implement:
-- Basic data of pokemon
-- Pokemons in order given a limit number per list 
-- Information about berries
-- Information about types
-- Information about evolutions
+# PokeDX
+This is a web app only for development server with flask.
 
-Do a frontend website with Flask server
+## How to test it
+- Clone the repository
+- Run the app.py file
+- Introduce the localhost:<port> adress in your web browser
+- Test the app!
