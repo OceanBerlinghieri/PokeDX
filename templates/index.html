@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
     <title>PokeDX</title>
 </head>
 <body>
+    <!--Main page for pokemons-->
+    <!--Add music to webpage-->
+    <audio src="../audio/pokemon_theme.mp3"></audio>
     <!--Header-->
     <nav class = navbar>
         <div class = header>
@@ -14,19 +17,11 @@
             <form action="/" method="POST">
                 <div>
                     <input type="search" name="search">
-                    <button type="submit">BUSCAR</button>
+                    <button type="submit">Buscar Pokemon</button>
                 </div>
             </form>
         </div>
     </nav>
 
-    <!--Content-->
-    <div>
-        <div>
-            <!--Accessing json data-->
-            <p>{{data['species']['name']}}</p>
-            <p>{{data['id']}}</p>
-        </div>
-    </div>
 </body>
 </html>
