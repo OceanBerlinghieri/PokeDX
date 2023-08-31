@@ -1,2 +1,36 @@
 body {
+    margin: 0;
+    background-position: top;
+    background-image: url(./pokeball.png);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: red;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 50px;
+    display: inline;
+    float: left;
+}
+
+.search-bar {
+    float: right;
+    display: inline;
+    padding-top: 20px;
+    margin-right: 50px;
+}
+
+
+.search-bar button {
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
 }
