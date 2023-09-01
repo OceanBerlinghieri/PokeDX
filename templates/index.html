@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
-    <title>PokeDX</title>
-</head>
-<body>
-    <!--Main page for pokemons-->
-    
-    <!--Add music to webpage-->
-    <!--<audio autoplay="True" src ="../static/pokemon_theme.mp3"></audio>-->
-    
-    <!--Header-->
-    <nav class = navbar>
-        <div class = header>
-            <h2 class = "logo">PokeDX</h2>
-            <form action="/" method="POST">
-                <div class = "search-bar">
-                    <input type="search" name="search">
-                    <button type="submit">Buscar Pokemon</button>
-                </div>
-            </form>
-        </div>
-    </nav>
+{% extends "base.html" %}
+{% block title %} Index {% endblock %}
 
-</body>
-</html>
+{% block content %} <p>This is the index page</p> {% endblock %}

@@ -1,3 +1,4 @@
+/*Default style for every page*/
 body {
     margin: 0;
     background-position: top;
@@ -5,8 +6,10 @@ body {
     background-repeat: no-repeat;
     background-size: 900px;
     text-align: center;
+    background-color: #ffeb9a;
 }
 
+/*Header section*/
 .header {
     text-align: center;
     position: fixed;
@@ -21,6 +24,11 @@ body {
     float: left;
 }
 
+.logo a {
+    text-decoration: none;
+    color: #ffcb05;
+}
+
 .search-bar {
     float: right;
     display: inline;
@@ -33,4 +41,28 @@ body {
     background-color: transparent;
     text-decoration: none;
     font-weight: bold;
+    padding: 3% 2px;
+    color: #ffcb05;
+}
+
+img {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.pokemon-info {
+    margin: 0 600px 500px 600px;
+    padding: 70px;
+    background-color:#ffd52b;
+}
+
+.pokemon-info h2 {
+    color: #2a75bb;
+    font-size: 300%;
+}
+.pokemon-info p {
+    color: #2a75bb;
+    font-size: 150%;
+    font-weight: bold;
+
 }

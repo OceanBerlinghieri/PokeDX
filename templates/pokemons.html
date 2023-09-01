@@ -1,40 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
-    <title>PokeDX</title>
-</head>
-<!--Page for consulted pokemon information-->
-<body>
-    <!--Header-->
-    <nav class = navbar>
-        <div class = header>
-            <h2>PokeDX</h2>
-            <form action="/" method="POST">
-                <div>
-                    <input type="search" name="search">
-                    <button type="submit">Buscar Pokemon</button>
-                </div>
-            </form>
-        </div>
-    </nav>
+<!--Page for specified pokemon information-->
+{% extends "base.html" %}
+    <title>{% block title %} Pokemon {% endblock %} PokeDX</title>
 
     <!--Content-->
+    {% block content %}
     <div>
-        <div>
+        <div class = "pokemon-info">
             <!--Accessing json data-->
             <h2 style="text-transform: capitalize;">{{data['name']}}</h2>
             <p>Pokedex ID: {{data['id']}}</p>
             <p>Types: </p>
 
             {% for type in data['types'] %}
-                <p style="text-transform: capitalize;">{{type['type']['name']}}</p>
+                <p style="text-transform: capitalize;">- {{type['type']['name']}}</p>
             {% endfor %}
 
-            <img src="{{data['sprites']['front_default']}}" width="8%">
+            <img src="{{data['sprites']['front_default']}}">
         </div>
     </div>
+    {% endblock %}
 </body>
 </html>
