@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-size: 900px;
     text-align: center;
-    background-color: #ffeb9a;
+    background-color: #dcdcdc;
 }
 
 /*Header section*/
@@ -14,25 +14,23 @@ body {
     text-align: center;
     position: fixed;
     top: 0;
-    background-color: red;
+    background-color: #808080;
     width: 100%;
 }
 
 .logo {
+    margin-top: 20px;
     margin-left: 50px;
+    margin-bottom: 20px;
+    width: 5%;
     display: inline;
     float: left;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #ffcb05;
 }
 
 .search-bar {
     float: right;
     display: inline;
-    padding-top: 20px;
+    margin-top: 15px;
     margin-right: 50px;
 }
 
@@ -53,16 +51,24 @@ img {
 .pokemon-info {
     margin: 0 600px 500px 600px;
     padding: 70px;
-    background-color:#ffd52b;
+    background-color:#6b8299;
 }
 
 .pokemon-info h2 {
-    color: #2a75bb;
+    color: #000000;
     font-size: 300%;
 }
 .pokemon-info p {
-    color: #2a75bb;
+    color: #000000;
     font-size: 150%;
     font-weight: bold;
+}
 
+.pokemon-info img {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.stats {
+    display: inline;
 }
